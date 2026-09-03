@@ -47,89 +47,91 @@ const About = () => {
           variants={containerVariants}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 text-sm sm:text-base md:text-[17px] leading-relaxed sm:leading-[1.7] tracking-tight font-[500]"
         >
-          {/* 👤 Identity */}
+          {/* Identity */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-emerald-600 dark:text-emerald-400">
-              🚀 Who I Am
+              Backend-First Engineer
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              I'm <strong>Anupam Ojha</strong>, Software Engineering Intern at{" "}
-              <strong>HugoHub</strong> and final-year CS undergrad at{" "}
-              <strong>IET Lucknow</strong> (GPA 8.22). I'm a systems thinker,
-              backend engineer, and competitive programmer focused on building
-              scalable, resilient platforms.
+              I'm <strong>Anupam Ojha</strong>, a Java Backend Developer with
+              1+ years of experience building <strong>Spring Boot</strong>{" "}
+              microservices, REST APIs, asynchronous pipelines, and
+              production-ready distributed systems.
             </p>
           </motion.div>
 
-          {/* 🛠️ Technical Work */}
+          {/* Technical Work */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-blue-600 dark:text-blue-400">
-              🛠️ Engineering Work
+              Production Engineering
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              At HugoHub, I engineered a fault-tolerant{" "}
-              <strong>workflow orchestration engine</strong> with retries & DLQs
-              that cut operational overhead by 40%. I also designed secure,
-              efficient reporting pipelines leveraging{" "}
-              <strong>S3, cron, and on-demand scheduling</strong>.
+              At Vavetek.ai, HugoHub, and Includ, I have worked on
+              authentication and licensing flows, workflow orchestration,
+              payment and order services, webhook consumers, and reporting
+              pipelines backed by <strong>Kafka, AWS SQS, AWS S3, Redis</strong>,
+              and SQL databases.
               <br />
               <br />
               <span className="italic text-gray-600 dark:text-gray-400 text-sm">
-                Stack: Spring Boot, Java, MySQL, Redis, Docker, SQS, Python,
-                Shell
+                Stack: Java 21, Spring Boot, Spring Security, JPA/Hibernate,
+                Kafka, SQS, S3, MySQL, PostgreSQL, Redis, Docker
               </span>
             </p>
           </motion.div>
 
-          {/* 🧠 CP Achievements */}
+          {/* CP Achievements */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-yellow-600 dark:text-yellow-400">
-              🧠 Competitive Edge
+              Competitive Edge
             </h3>
             <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1 text-sm sm:text-base">
-              <li>ICPC Amritapuri 2024 – Rank 37</li>
-              <li>IICPC 2025 (IIT-H) – Rank 78</li>
+              <li>ICPC Amritapuri 2024 - AIR 37 among 10,000+ participants</li>
+              <li>IICPC 2025 (IIT Hyderabad) - AIR 76</li>
               <li>Codeforces Expert (1634), LeetCode Guardian (2301)</li>
               <li>4★ CodeChef (1995), Meta HackerCup Round 2</li>
               <li>2000+ DSA problems solved</li>
             </ul>
           </motion.div>
 
-          {/* 📚 Skills */}
+          {/* Skills */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-purple-600 dark:text-purple-400">
-              📚 Skills & Stack
+              Skills & Stack
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              <strong>Languages:</strong> Java, C++, Python, JavaScript, SQL
+              <strong>Languages:</strong> Java, SQL, Python, JavaScript, C++
               <br />
-              <strong>Frameworks:</strong> Spring Boot, Node.js, Express, React
+              <strong>Backend:</strong> Spring Boot, Spring Security, REST,
+              GraphQL, JWT, JPA, Hibernate
               <br />
-              <strong>Infra:</strong> Kafka, Redis, Docker, K8s, SQS, S3
+              <strong>Infra:</strong> Kafka, AWS SQS/S3/RDS/EC2, Redis, Docker,
+              GitHub Actions
               <br />
-              <strong>Databases:</strong> MySQL, MongoDB, PostgreSQL
+              <strong>Databases:</strong> MySQL, PostgreSQL, DynamoDB,
+              Cassandra, MongoDB
             </p>
           </motion.div>
 
-          {/* 👨‍🏫 Mentorship */}
+          {/* Mentorship */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-pink-600 dark:text-pink-400">
-              👨‍🏫 Mentorship
+              Mentorship
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
               As Lead at <strong>Fractal Coding Club</strong>, I've mentored
@@ -139,23 +141,23 @@ const About = () => {
             </p>
           </motion.div>
 
-          {/* 👁️ Distinction */}
+          {/* Distinction */}
           <motion.div
             variants={fadeInUp}
             className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-xl sm:rounded-2xl border shadow-md hover:shadow-lg transition duration-300 space-y-3 sm:space-y-4"
           >
             <h3 className="text-lg sm:text-xl font-semibold text-red-600 dark:text-red-400">
-              👁️ What Sets Me Apart
+              What Sets Me Apart
             </h3>
             <p className="text-gray-700 dark:text-gray-300">
-              I bring together strong <strong>CS fundamentals</strong> with
-              hands-on product engineering. My edge lies in designing{" "}
-              <strong>resilient, performant systems</strong>, debugging tough
-              backend flows, and shipping production-grade solutions fast.
+              My edge is combining <strong>CS fundamentals</strong>, competitive
+              programming depth, and hands-on backend engineering. I focus on
+              latency, memory behavior, idempotency, fault tolerance, and
+              reliable data flow across services.
             </p>
           </motion.div>
 
-          {/* 📊 Stats */}
+          {/* Stats */}
           {[
             { number: "10+", label: "Projects Delivered", icon: "🚀" },
             { number: "400+", label: "Global Contests Participated", icon: "📊" },

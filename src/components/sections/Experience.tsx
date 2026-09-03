@@ -5,20 +5,45 @@ import { motion } from "framer-motion";
 const Experience = () => {
   const experiences = [
   {
-    title: "SDE Intern",
+    title: "Software Developer",
+    company: "Vavetek.ai",
+    period: "Sept 2025 - Present",
+    description: [
+      "Developed authentication and license validation flows for online/offline activation using device fingerprinting, concurrent device limits, and FIFO-based session eviction.",
+      "Engineered a stateful WebSocket communication layer for real-time backend-worker synchronization with fault tolerance, reconnection logic, session recovery, and debounced updates.",
+      "Implemented a Kafka-orchestrated distributed processing pipeline for 1GB+ average payloads per request while keeping memory usage near 200MB per node.",
+      "Optimized Spring Boot API execution paths using R-tree spatial indexing and parallel processing, reducing latency from 800ms to 20ms and improving request throughput by 40x.",
+      "Built a resilient webhook producer system using request sequencing, timestamp validation, hashing, delivery semantics, and idempotency guarantees.",
+      "Automated CI/CD and internal validation workflows using GitHub Actions and testing utilities, reducing deployment and validation cycles by 50%.",
+      "Diagnosed and fixed critical memory leaks using Memory Profiler, eliminating 1GB+ memory growth across successive runs.",
+    ],
+    icon: "💼",
+  },
+  {
+    title: "Software Engineer Intern",
     company: "Includ",
-    period: "July 2025 – Current",
-    description:
-      "Built a robust tool to automate inventory and order management for a child-wear e-commerce brand, significantly reducing manual errors and operational overhead. Integrated Shopify and Shiprocket APIs to create a unified backend system for real-time syncing of orders, inventory, and logistics. Enabled seamless data flow for business analytics, improving operational visibility and decision-making.",
+    period: "July 2025 - Aug 2025",
+    description: [
+      "Implemented product catalog and order management microservices using Spring Boot and Spring Data JPA for a child-wear e-commerce brand.",
+      "Integrated Shopify and Unicommerce APIs to automate SKU synchronization, improve data accuracy, and reduce manual inventory/order errors.",
+      "Developed RESTful webhook consumers for payment and shipping events with retry logic and idempotency guarantees.",
+      "Introduced GraphQL endpoints and a Backend-for-Frontend layer to aggregate server-side data for web and mobile clients, reducing client-server round trips.",
+      "Preserved a unified backend data flow for orders, inventory, logistics, and business analytics visibility from the old portfolio scope.",
+    ],
     icon: "💼",
     linkedin: "https://www.linkedin.com/company/aspiringbrands",
   },
   {
-    title: "SWE Intern",
+    title: "Software Engineering Intern",
     company: "HugoHub",
-    period: "Jan 2025 – June 2025",
-    description:
-      "Designed and implemented a scalable workflow orchestration framework with asynchronous task handling, exponential backoff, and retry queues to support complex user journeys. Spearheaded development of a modular reporting system with scheduled/on-demand exports and secure cloud storage integration. Proactively identified and patched critical backend security vulnerabilities, improving compliance and resilience. Optimized high-throughput data queries and automated CI/CD pipelines using scripting for faster deployments.",
+    period: "Jan 2025 - June 2025",
+    description: [
+      "Implemented a Spring Boot workflow orchestration platform for banking clients, supporting KYC, onboarding, and business workflows through centralized state management and configuration-driven execution.",
+      "Designed asynchronous task handling with exponential backoff, retry queues, and DLQ-style resilience patterns to support complex user journeys.",
+      "Built an asynchronous PDF report generation pipeline for financial data using AWS SQS, AWS S3, OpenPDF, chunk processing, and cursor-based pagination to handle large datasets without duplication or data loss.",
+      "Developed recurring payments backend APIs with mandate lifecycle management and scheduler-based execution for reliable pull-based debit processing.",
+      "Preserved secure scheduled/on-demand exports, cloud storage integration, backend security fixes, high-throughput query optimization, and script-assisted CI/CD deployment improvements from the existing portfolio.",
+    ],
     icon: "💼",
     linkedin: "https://www.linkedin.com/company/hugohub",
   },
@@ -26,8 +51,11 @@ const Experience = () => {
     title: "Problem Setter Intern",
     company: "HackerEarth",
     period: "Oct 2024 – Dec 2024",
-    description:
-      "Crafted high-quality DSA problems used in technical assessments for top-tier tech firms. Collaborated with the content team to design real-world programming challenges that assess algorithmic thinking and code efficiency. Led multiple programming contests, improving user retention and platform engagement by over 15%.",
+    description: [
+      "Crafted high-quality DSA problems used in technical assessments for top-tier tech firms.",
+      "Collaborated with the content team to design real-world programming challenges that assess algorithmic thinking and code efficiency.",
+      "Led multiple programming contests, improving user retention and platform engagement by over 15%.",
+    ],
     icon: "💼",
     linkedin: "https://www.linkedin.com/company/hackerearth",
   },
@@ -103,14 +131,16 @@ const Experience = () => {
                           
                             {exp.title}
                             <div>
-                            <a
-                            href={exp.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="absolute top-4 mt-5 ml-2  text-emerald-600 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
-                          >
-                            <Linkedin className="w-5 h-5" />
-                          </a>
+                            {exp.linkedin && (
+                              <a
+                                href={exp.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute top-4 mt-5 ml-2  text-emerald-600 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors"
+                              >
+                                <Linkedin className="w-5 h-5" />
+                              </a>
+                            )}
                           </div>
                         </h3>
                   
@@ -122,9 +152,11 @@ const Experience = () => {
                       <p className="text-gray-600 dark:text-gray-400 mb-2 font-medium">
                         {exp.company}
                       </p>
-                      <p className="text-gray-700 dark:text-gray-300">
-                        {exp.description}
-                      </p>
+                      <ul className="list-disc pl-5 space-y-2 text-gray-700 dark:text-gray-300">
+                        {exp.description.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
                 </CardContent>

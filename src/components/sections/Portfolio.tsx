@@ -14,13 +14,22 @@ const techStackColors: Record<string, string> = {
   // Backend
   "Spring Boot": "bg-purple-600 hover:bg-purple-700 text-white",
   "Java": "bg-red-600 hover:bg-red-700 text-white",
+  "Java 21": "bg-red-600 hover:bg-red-700 text-white",
   "PostgreSQL": "bg-blue-600 hover:bg-blue-700 text-white",
+  "MySQL": "bg-indigo-600 hover:bg-indigo-700 text-white",
   "Docker": "bg-sky-600 hover:bg-sky-700 text-white",
   "Redis": "bg-red-700 hover:bg-red-800 text-white",
   "JWT": "bg-pink-600 hover:bg-pink-700 text-white",
   "Base62 Encoding": "bg-amber-600 hover:bg-amber-700 text-white",
   "Role Management": "bg-indigo-600 hover:bg-indigo-700 text-white",
   "Security": "bg-emerald-600 hover:bg-emerald-700 text-white",
+  "Spring Security": "bg-emerald-600 hover:bg-emerald-700 text-white",
+  "AWS SQS": "bg-orange-600 hover:bg-orange-700 text-white",
+  "Protobuf": "bg-violet-600 hover:bg-violet-700 text-white",
+  "JDBC": "bg-slate-600 hover:bg-slate-700 text-white",
+  "REST APIs": "bg-blue-700 hover:bg-blue-800 text-white",
+  "Scheduled Jobs": "bg-amber-700 hover:bg-amber-800 text-white",
+  "AI Captions": "bg-fuchsia-600 hover:bg-fuchsia-700 text-white",
   "Node.js": "bg-green-600 hover:bg-green-700 text-white",
   "Express.js": "bg-gray-600 hover:bg-gray-700 text-white",
   
@@ -46,6 +55,25 @@ const techStackColors: Record<string, string> = {
 
 const Portfolio = () => {
   const featuredProjects = [
+    {
+      title: "Metal Trading Platform",
+      stack: [
+        "Java 21",
+        "Spring Boot",
+        "Spring Security",
+        "MySQL",
+        "Redis",
+        "AWS SQS",
+        "Protobuf",
+        "JDBC",
+        "REST APIs",
+        "Scheduled Jobs",
+      ],
+      description:
+        "Built a Spring Boot trading backend for precious metal buy/sell workflows, exposing wallet, asset, and transaction APIs. Designed an asynchronous trade execution pipeline that validates balances and holdings, publishes Protobuf commands to AWS SQS, and processes queued buy/sell events through a scheduled consumer. Applied transactional wallet, asset, and audit-history updates to preserve consistency across trade execution, settlement, and portfolio tracking workflows. Designed and implemented a scheduled market-price ingestion pipeline using Java, REST APIs, and JDBC to automatically synchronize Gold, Silver, and Platinum prices into MySQL.",
+      github: null,
+      demo: null,
+    },
     {
       title: "URL Shortener",
       stack: [
@@ -88,6 +116,7 @@ const Portfolio = () => {
         "MongoDB",
         "Socket.io",
         "Multer",
+        "AI Captions",
       ],
       description:
         "Architected a production-grade social media platform featuring real-time WebSocket-based messaging (Socket.io), post interactions, and intelligent caption generation via prompt-tuned AI models. MongoDB stores normalized user and post schemas using indexes for fast timeline aggregation. Media uploads are handled through Multer with input sanitization. Backend follows controller-service-repository pattern with JWT authentication, refresh token rotation, and rate-limited APIs. The system supports thousands of concurrent connections with graceful socket failovers and stateless scaling using sticky sessions.",
@@ -155,8 +184,9 @@ const Portfolio = () => {
           variants={fadeInUp}
           className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto"
         >
-          A collection of projects that showcase my skills and passion for
-          creating innovative solutions
+          Backend-heavy projects covering Spring Boot APIs, asynchronous
+          processing, caching, auth, distributed workflows, and AI-assisted
+          application features
         </motion.p>
 
         {/* Featured Projects */}
@@ -191,26 +221,28 @@ const Portfolio = () => {
                         {project.title}
                       </h3>
                       <div className="flex space-x-2">
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <a
-                              href={project.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <Button
-                                size="sm"
-                                variant="ghost"
-                                className="p-2 h-9 w-9 hover:bg-muted/50 group/btn"
+                        {project.github && (
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
                               >
-                                <Github className="w-4 h-4 group-hover/btn:text-emerald-600 dark:group-hover/btn:text-emerald-400 transition-colors" />
-                              </Button>
-                            </a>
-                          </TooltipTrigger>
-                          <TooltipContent>
-                            <p>Github</p>
-                          </TooltipContent>
-                        </Tooltip>
+                                <Button
+                                  size="sm"
+                                  variant="ghost"
+                                  className="p-2 h-9 w-9 hover:bg-muted/50 group/btn"
+                                >
+                                  <Github className="w-4 h-4 group-hover/btn:text-emerald-600 dark:group-hover/btn:text-emerald-400 transition-colors" />
+                                </Button>
+                              </a>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>Github</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        )}
 
                         {project.demo && (
                           <Tooltip>

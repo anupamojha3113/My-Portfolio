@@ -18,16 +18,16 @@ const Achievements = () => {
       contests: "70+",
       profileLink: "https://leetcode.com/u/LessThanExpert/",
       badgeColor: "bg-orange-500/10 text-orange-500",
-      notableRanks: "Top 6% globally & AIR 87",
+      notableRanks: "Guardian, max rating 2301, AIR 87, top 0.1% globally",
     },
     {
       title: "Codeforces",
-      rating: "1632+ (Expert)",
-      problemsSolved: "780+",
+      rating: "1634 (Expert)",
+      problemsSolved: "1000+",
       contests: "130+",
       profileLink: "https://codeforces.com/profile/LessThanExpert",
       badgeColor: "bg-blue-500/10 text-blue-500",
-      notableRanks: "Max Rating: 1650",
+      notableRanks: "Expert rating with sustained contest participation",
     },
     {
       title: "CodeChef",
@@ -52,10 +52,10 @@ const Achievements = () => {
       region:"Amritapuri Regionals",
       profileLink: "https://amritaicpc.in/final-rank-list",
       badgeColor: "bg-indigo-500/10 text-indigo-500",
-      notableRanks: "All India Rank 37",
+      notableRanks: "All India Rank 37 among 10,000+ participants",
     },
     {
-      title: "IICPC IIT Hydrabad",
+      title: "IICPC IIT Hyderabad",
       region: "National Level",
       profileLink: "https://drive.google.com/file/d/12wK-DLbg7MDaVU_wsQOPr_VmawqRtRVZ/view",
       badgeColor: "bg-yellow-500/10 text-yellow-500",
@@ -63,10 +63,10 @@ const Achievements = () => {
     },
     {
       title: "Meta Hackercup",
-      region: "Globle Level",
+      region: "Global Level",
       profileLink: "https://www.facebook.com/codingcompetitions/hacker-cup/2023/certificate/1073879700650126/",
       badgeColor: "bg-red-500/10 text-red-500",
-      notableRanks: "Qualified to Round 2",
+      notableRanks: "Qualified to Round 2, top 500 worldwide",
     },
     {
       title: "GeeksforGeeks",
@@ -75,7 +75,7 @@ const Achievements = () => {
       contests: "5+",
       profileLink: "https://www.geeksforgeeks.org/user/devanandg9qz/",
       badgeColor: "bg-green-500/10 text-green-500",
-      notableRanks: "Got multiple time single digit ranks ie 1,2",
+      notableRanks: "Multiple single-digit ranks, including 1 and 2",
     },
   ];
 
@@ -130,8 +130,8 @@ const Achievements = () => {
           variants={fadeInUp}
           className="text-muted-foreground text-center mb-16 max-w-2xl mx-auto"
         >
-          My competitive programming profiles and achievements across various
-          platforms
+          Competitive programming achievements that reinforce strong DSA,
+          algorithms, optimization, and system-design problem solving
         </motion.p>
 
         <motion.div

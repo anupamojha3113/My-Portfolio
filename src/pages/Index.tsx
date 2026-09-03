@@ -11,6 +11,7 @@ import Contact from '@/components/sections/Contact';
 import Footer from '@/components/sections/Footer';
 import LoadingScreen from '@/components/shared/LoadingScreen';
 import Achievements from '@/components/sections/Achievements';
+import Education from '@/components/sections/Education';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -35,7 +36,7 @@ const Index = () => {
   // Scroll detection for active section
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'experience', 'skills', 'services', 'portfolio', 'contact'];
+      const sections = ['home', 'about', 'experience', 'skills', 'services', 'achievements', 'education', 'portfolio', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -96,6 +97,7 @@ const Index = () => {
         <Skills />
         <Services />
         <Achievements/>
+        <Education />
         <Portfolio />
         <Contact />
         <Footer />

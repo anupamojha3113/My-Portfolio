@@ -27,21 +27,22 @@ const Hero = ({ scrollToSection }: HeroProps) => {
             <div className="space-y-2 text-base sm:text-lg lg:text-xl text-gray-700 dark:text-gray-200">
               <p className="overflow-hidden border-r-2 border-gray-600 animate-typewriter-delay-1">
                 <span className="inline-block">
-                  Backend Engineer | Spring Boot Developer
+                  Java Backend Engineer | Spring Boot Microservices
                 </span>
                 <br className="sm:hidden" />
                 <span className="inline-block">
-                  Dev ops | Competitive Programmer
+                  Kafka, AWS & Distributed Systems
                 </span>
               </p>
               <p className="overflow-hidden border-r-2 border-gray-600 animate-typewriter-delay-2">
-                System Design Enthusiast
+                REST APIs, Event-Driven Architecture & GenAI Backends
               </p>
             </div>
 
             <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-lg animate-fade-in-delay-4 my-2">
-              Crafting modern web solutions that merge design, performance, and
-              function.
+              I build production-ready backend systems with Java 21, Spring Boot,
+              Kafka, AWS SQS/S3, Redis, SQL databases, and memory optimized performance-first
+              system design.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 animate-fade-in-delay-5 w-full">
@@ -53,7 +54,7 @@ const Hero = ({ scrollToSection }: HeroProps) => {
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <a
-                href="https://drive.google.com/file/d/1GTim8YFMh0te1N8FZrHdsIDzDhPhCzfC/view?usp=sharing"
+                href="https://drive.google.com/file/d/1H0R8T9EkQVRdnpwnEZtfqgAVlL7s2ISZ/view"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto"

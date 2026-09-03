@@ -1,5 +1,5 @@
 
-import { Phone, Mail, Github, Linkedin, Code } from 'lucide-react';
+import { Phone, Mail, Github, Linkedin, Code, MapPin } from 'lucide-react';
 import { ContactInfoItem } from './types';
 
 export const contactInfo: ContactInfoItem[] = [
@@ -8,6 +8,18 @@ export const contactInfo: ContactInfoItem[] = [
     label: 'Email',
     value: 'anupamojha3113@gmail.com',
     href: 'mailto:anupamojha3113@gmail.com'
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+91-7317589476',
+    href: 'tel:+917317589476'
+  },
+  {
+    icon: MapPin,
+    label: 'Location',
+    value: 'Bengaluru, India',
+    href: 'https://www.google.com/maps/place/Bengaluru'
   },
   {
     icon: Linkedin,

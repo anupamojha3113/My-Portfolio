@@ -2,7 +2,6 @@
 import { motion } from 'framer-motion';
 import { contactInfo } from './contactData';
 import { fadeInUp, slideInLeft } from './animations';
-import { infiniteQueryOptions } from '@tanstack/react-query';
 
 const ContactInfo = () => {
   return (

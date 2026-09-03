@@ -21,7 +21,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['Home', 'About', 'Experience', 'Skills', 'Services', 'Achievements', 'Portfolio', 'Contact'].map((item) => (
+            {['Home', 'About', 'Experience', 'Skills', 'Services', 'Achievements', 'Education', 'Portfolio', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -57,7 +57,7 @@ const Navigation = ({ activeSection, scrollToSection }: NavigationProps) => {
         {/* Mobile Navigation */}
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
           <div className="flex flex-col space-y-3 pt-4 pb-2">
-            {['Home', 'About', 'Experience', 'Skills', 'Services', 'Achievements', 'Portfolio', 'Contact'].map((item, index) => (
+            {['Home', 'About', 'Experience', 'Skills', 'Services', 'Achievements', 'Education', 'Portfolio', 'Contact'].map((item, index) => (
               <button
                 key={item}
                 onClick={() => {

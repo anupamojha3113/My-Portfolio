@@ -26,7 +26,9 @@ const Contact = () => {
           variants={fadeInUp}
           className="text-gray-600 dark:text-gray-300 text-center mb-16 max-w-2xl mx-auto"
         >
-          Let's discuss your next project or just say hello! I'm always open to new opportunities and collaborations.
+          Open to backend engineering roles, Spring Boot microservices work,
+          cloud/event-driven systems, and technically challenging product
+          engineering opportunities.
         </motion.p>
         
         <motion.div 

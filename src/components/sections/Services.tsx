@@ -15,9 +15,9 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Full Stack Web Development",
+      title: "Java Backend Development",
       description:
-        "Build scalable and modern web apps using Spring Boot, React.js, and Node.js with solid backend architecture and clean frontend design.",
+        "Build production-ready backend services with Java 21, Spring Boot, Spring Security, JPA/Hibernate, REST APIs, GraphQL, JWT, and clean service boundaries.",
       gradient: "from-emerald-500 to-teal-600",
     },
     {
@@ -38,14 +38,14 @@ const Services = () => {
       icon: Cloud,
       title: "Cloud & DevOps Solutions",
       description:
-        "Deploy applications with Docker, Jenkins, Kubernetes on AWS (S3, EC2, RDS, SQS) with CI/CD pipelines and infrastructure automation.",
+        "Deploy and automate services with Docker, GitHub Actions, Jenkins, Kubernetes, and AWS services including S3, EC2, RDS, and SQS.",
       gradient: "from-cyan-500 to-sky-600",
     },
     {
       icon: ShieldCheck,
       title: "System Design & Architecture",
       description:
-        "Architect robust, scalable, and fault-tolerant backend systems with event-driven, microservices-based, and domain-driven design.",
+        "Architect robust, scalable, and fault-tolerant backend systems with event-driven, microservices-based, distributed, and domain-driven design.",
       gradient: "from-violet-500 to-fuchsia-600",
     },
     {
@@ -59,15 +59,22 @@ const Services = () => {
       icon: MonitorCheck,
       title: "Observability & Monitoring",
       description:
-        "Integrate logging and monitoring with Logback, Grafana, and ELK stack to ensure visibility, traceability, and root-cause analysis. Implement health checks and fault-tolerant architectures for resilient services.",
+        "Integrate logging, monitoring, profiling, and health checks with tools such as Logback, Grafana, and Memory Profiler to improve traceability and root-cause analysis.",
       gradient: "from-lime-500 to-green-600",
     },
     {
       icon: Loader,
       title: "Asynchronous & Resilient Systems",
       description:
-        "Design background job, workflow management systems using Kafka or AWS SQS for offloading tasks, retry mechanisms, messeging or notification service and async analytics pipelines.",
+        "Design background jobs, workflow systems, webhook producers/consumers, retry mechanisms, messaging services, and async analytics pipelines using Kafka or AWS SQS.",
       gradient: "from-indigo-500 to-blue-600",
+    },
+    {
+      icon: Code,
+      title: "AI-Powered Backend Features",
+      description:
+        "Integrate AI-assisted product capabilities such as prompt-driven caption generation behind reliable APIs, auth, rate limits, and backend workflow boundaries.",
+      gradient: "from-fuchsia-500 to-purple-600",
     },
   ];
 
